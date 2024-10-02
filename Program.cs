@@ -11,17 +11,6 @@
             //Mergesort will run with the complexity of Theta(n.Log(n))
             MergeSort(inputArray, Comparer<K>.Default);
 
-            /*
-            Scan the array,
-            left is the left most index (0)
-            right is right most index (length-1)
-            if element in left most + rightmost is the wanted number return true
-            if < the wanted number then increase left by 1
-            if > the wanted number then decrease right by 1
-            if can not find the 2 numbers, then return false
-
-            This will run with the complexity of Theta(n)
-             */
             while (left < right)
             {
                 if (inputArray[left] + inputArray[right] == sum)
